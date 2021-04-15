@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrations</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'trainer/complete.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+    <form action="{% url 'gettrcomplete' %}" method="post">
+        {% csrf_token %}
+        <div class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" value="{{name}}" disabled>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">User Name</label>
+                <input type="text" class="form-control" name="username">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control" name="phonenumber">
+            </div>
+            <div class="col-md-12">
+                <label class="form-label">Address</label>
+                <input type="text" class="form-control" name="address">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Education</label>
+                <select class="form-select" name="education">
+                    <option>UG</option>
+                    <option>PG</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Education Details</label>
+                <input type="text" class="form-control" name="details">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Year of Completion</label>
+                <input type="text" class="form-control" name="year">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Percentage</label>
+                <input type="text" class="form-control" name="percentage">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Expert in</label>
+                <select class="form-select" name="expert">
+                    <option>Python-Django</option>
+                    <option>Data Science</option>
+                    <option>Mean Stack</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Experience in years</label>
+                <input type="text" class="form-control" name="experience">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Availability</label>
+                <select class="form-select" name="available">
+                    <option>Full-Time</option>
+                    <option>Part Time</option>
+                    <option>Both</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Hours Available for Part Time</label>
+                <input type="text" class="form-control" name="hours">
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Available Mode</label>
+                <select class="form-select" name="mode">
+                    <option>Online</option>
+                    <option>Offline</option>
+                    <option>Both</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">Available days</label>
+                <select class="form-select" name="days">
+                    <option>Week days</option>
+                    <option>Weekend</option>
+                    <option>Both</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+        </div>
+
+
+    </form>
+</div>
+</body>
+</html>

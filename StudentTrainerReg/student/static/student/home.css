@@ -1,0 +1,35 @@
+body {background-color: Black;}
+.navbar-brand {
+    height: auto;
+}
+
+#img1 {
+    width:50px;
+    height:30px
+}
+ #one {
+width:100%;
+height:80%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+}
+h1{
+font-family: 'New Tegomin', serif;
+}
+
+.dropdown-toggle {
+    background-color: Black;
+}
+
+.cards{
+margin-top:3%
+}
+.card{
+background-color: rgb(73,159,194);
+}
