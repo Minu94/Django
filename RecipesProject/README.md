@@ -3,7 +3,7 @@
 <div align="center">
       <a href="https://youtu.be/fSDXdpepih0">
      <img 
-      src="" 
+      src="images/scr.png" 
       alt="Everything Is AWESOME" 
       style="width:100%;">
       </a>
